@@ -10,10 +10,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&family=Lexend+Deca:wght@700&family=Secular+One&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./src/assets/styles/globalStyle.css">
+  <link rel="stylesheet" href="./src/assets/styles/noteFormStyle.css">
   <link rel="stylesheet" href="./src/assets/styles/variants.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Notepad</title>
 </head>
 
@@ -22,26 +23,39 @@
   <main class="container">
     <section class="container-noteForms">
       <form class="form">
-        <h1>Bloco de anotações</h1>
+        <h1>Bloco de anotações 📝</h1>
         <input type="text" name="title" id="title" placeholder="Titulo" required>
-        <textarea name="note" id="note" cols="30" rows="10" placeholder="Escreva sua nota!" required></textarea>
-        <input class="btnSave" type="button" value="salvar">
+        <input type="text" name="note" id="note" placeholder="Sua nota" required>  
+        <input class="btnSave" type="submit" value="salvar">
       </form>
       <section class="notes">
-        <h2>Notas</h2>
-        <span class="material-symbols-outlined">folder_delete</span>
-        <div>
-          <h4>Mercado</h4>
+        <div class="titleNote-deleteAll">
+          <h2>Notas</h2>
+          <span class="material-symbols-outlined">folder_delete</span>
+        </div>
+        <div class="notes-content">
+          <h4> ✔ Mercado</h4>
           <p>comprar leite</p>
-          <div>
-            <!-- icones aqui -->
+          <div class="iconsEdit">
             <span class="material-symbols-outlined">edit_note</span>
             <span class="material-symbols-outlined">delete</span>
           </div>
         </div>
       </section>
     </section>
-    <section class="container-ilustration-and-devInfos"></section>
+    <section class="container-ilustration-and-devInfos">
+      <img src="./src/assets/imgs/girl with notepad.svg" alt="girl with notepad">
+      <div class="devInfos">
+        <h6>Feito com ❤ por Luís Soares</h6>
+        <a href="https://www.linkedin.com/in/luissoaresdeveloper/" target="_blank">
+          <img class="devIcons" src="./src/assets/imgs/linkedin.svg" alt="logo linkedin">
+        </a>
+        <a  href="http://github.com/soaressluiss" target="_blank">
+          <img class="devIcons" src="./src/assets/imgs/github.svg" alt="logo github">
+        </a>
+      </div>
+      
+    </section>
   </main>
 
 

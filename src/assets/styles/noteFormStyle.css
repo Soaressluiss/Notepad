@@ -1,0 +1,145 @@
+@keyframes up {
+
+    0%,
+    100% {
+        transform: translateY(-5px)
+    }
+}
+
+
+
+h1 {
+    font-family: var(--font-title);
+    color: var(--fontcolor);
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 100%;
+    margin-top: 2rem;
+    align-items: center;
+    background: rgba(221, 217, 217, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(219, 25, 187, 0.37);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+
+#title,
+#note {
+    width: 80%;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.btnSave {
+    background-color: var(--btn-color);
+    width: 150px;
+    height: 53px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: var(--font-notes);
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    cursor: pointer;
+    font-size: .7rem;
+}
+
+.btnSave:hover {
+    background-color: #1d1d68;
+    transition: all .5s ease;
+}
+
+
+/* notas */
+
+.notes {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titleNote-deleteAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    border-bottom: var(--houve-color) 2px dashed;
+}
+
+.titleNote-deleteAll>h2 {
+    font-family: var(--font-title);
+    color: var(--fontcolor);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.material-symbols-outlined {
+    color: var(--btn-color);
+    font-size: 2.3rem;
+    cursor: pointer;
+
+}
+
+.material-symbols-outlined:hover {
+    animation: up 2s forwards ease-out;
+    transition: all 1s;
+    color: var(--houve-color)
+}
+
+.notes {
+    background: rgba(221, 217, 217, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(219, 25, 187, 0.37);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.notes-content {
+    width: 100%;
+
+    display: grid;
+    grid-template-areas: "a a"
+        "b c";
+    align-items: flex-start;
+}
+
+.notes-content>h4 {
+    font-family: var(--font-notes);
+    color: var(--fontcolor);
+    font-size: 1.5rem;
+    grid-area: a;
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+.notes-content>p {
+    font-size: 1.4rem;
+    font-family: var(--font-notes);
+    color: var(--fontcolor);
+    grid-area: b;
+}
+
+.iconsEdit {
+    grid-area: c;
+    margin-left: 12rem;
+}
