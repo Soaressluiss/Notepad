@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    background: linear-gradient(120.05deg, #FF9ABB 23.49%, #F902D1 133.81%);
+}
