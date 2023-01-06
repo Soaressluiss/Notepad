@@ -1,0 +1,43 @@
+
+
+.container-ilustration-and-devInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* imagen */
+
+.container-ilustration-and-devInfos>img {
+    width: 70%;
+
+}
+
+/* Dev Infos */
+
+.devInfos {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.devInfos>h6 {
+    font-family: var(--font-devInfo);
+    font-size: 1rem;
+}
+
+.devName {
+    color: white;
+}
+.devIcons {
+    width: 25px;
+    
+}
+.linkedin {
+    animation: upDown 2.2s infinite ease;
+}
+.github {
+    animation: upDown 2s infinite ease;
+}

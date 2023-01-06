@@ -7,11 +7,11 @@
 }
 
 html{
-    background: linear-gradient(120.05deg, #FF9ABB 23.49%, #F902D1 133.81%);
+    background: linear-gradient(100deg, #FF9ABB 23.49%, #F902D1 133.81%);
 }
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
 }

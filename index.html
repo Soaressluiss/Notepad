@@ -10,11 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&family=Lexend+Deca:wght@700&family=Secular+One&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./src/assets/styles/globalStyle.css">
   <link rel="stylesheet" href="./src/assets/styles/noteFormStyle.css">
   <link rel="stylesheet" href="./src/assets/styles/variants.css">
+  <link rel="stylesheet" href="./src/assets/styles/ilustration-and-DevInfos.css">
+  <link rel="stylesheet" href="./src/assets/styles/animations.css">
   <title>Notepad</title>
 </head>
 
@@ -25,12 +27,12 @@
       <form class="form">
         <h1>Bloco de anotações 📝</h1>
         <input type="text" name="title" id="title" placeholder="Titulo" required>
-        <input type="text" name="note" id="note" placeholder="Sua nota" required>  
+        <input type="text" name="note" id="note" placeholder="Sua nota" required>
         <input class="btnSave" type="submit" value="salvar">
       </form>
       <section class="notes">
         <div class="titleNote-deleteAll">
-          <h2>Notas</h2>
+          <h2>Minhas notas</h2>
           <span class="material-symbols-outlined">folder_delete</span>
         </div>
         <div class="notes-content">
@@ -46,15 +48,15 @@
     <section class="container-ilustration-and-devInfos">
       <img src="./src/assets/imgs/girl with notepad.svg" alt="girl with notepad">
       <div class="devInfos">
-        <h6>Feito com ❤ por Luís Soares</h6>
+        <h6>Feito com ❤ por <span class="devName">Luís Soares</span></h6>
         <a href="https://www.linkedin.com/in/luissoaresdeveloper/" target="_blank">
-          <img class="devIcons" src="./src/assets/imgs/linkedin.svg" alt="logo linkedin">
+          <img class="devIcons linkedin" src="./src/assets/imgs/linkedin.svg" alt="logo linkedin">
         </a>
-        <a  href="http://github.com/soaressluiss" target="_blank">
-          <img class="devIcons" src="./src/assets/imgs/github.svg" alt="logo github">
+        <a class="github" href="http://github.com/soaressluiss" target="_blank">
+          <img class="devIcons github" src="./src/assets/imgs/github.svg" alt="logo github">
         </a>
       </div>
-      
+
     </section>
   </main>
 
